@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Simple Calculator
-    </title>
-</head>
-<body>
-    <script src="calculator.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <main>
+      <section id="add">
+        <input type="text" placeholder="Enter first number1" id="nums" />
+        <input type="number" placeholder="Enter second number2" id="num2" />
+        <button onclick="addNumbers()">Add</button>
+        <h2>Result of Sumation</h2>
+        <p id="output"></p>
+      </section>
+
+      <section id="subtract">
+        <input type="number" placeholder="Enter first number3" id="num3" />
+        <input type="number" placeholder="Enter second number4" id="num4" />
+        <button onclick="subtractNumbers()">Subtract</button>
+        <h2>Result of Subtraction</h2>
+        <p id="output2"></p>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
 </html>

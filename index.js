@@ -113,3 +113,36 @@ const factorial = function (n) {
 };
 console.log(factorial(3));
 // print 1 to 10
+// get the elements we need.
+
+const num1 = document.getElementById("num1");
+
+const num2 = document.getElementById("num2");
+
+const output = document.getElementById("output");
+
+function addNumbers() {
+  const num1Value = Number(num1.value);
+  const num2Value = Number(num2.value);
+  const sum = addNamed(num1Value, num2Value);
+  output.innerText = sum;
+}
+
+function handleSummation() {
+  const nums = document.getElementById("nums").value;
+  const numbers = nums.split(","); // 1,2,3,4,5,4
+  // convert numbers to Number
+  // learn the map method of an array.
+  // push, pop
+  let cleanedNumbers = [];
+  for (let i = 0; i < nums.length; i++) {
+    const num = Number(numbers[i]);
+    cleanedNumbers.push(num);
+  }
+
+  const sum = sum(cleanedNumbers);
+  // [1,2,3,4,5,4]
+  /// an array
+  /// update the dom with the solution.
+}
+// update the dom for the other tasks
